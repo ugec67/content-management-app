@@ -8,13 +8,13 @@ import { getFirestore, doc, getDoc, addDoc, setDoc, updateDoc, deleteDoc, onSnap
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCyIo93N_mNL-n8uZNp_VoiHhCRsMwXzWE",
-  authDomain: "creator-cms-73cc3.firebaseapp.com",
-  projectId: "creator-cms-73cc3",
-  storageBucket: "creator-cms-73cc3.firebasestorage.app",
-  messagingSenderId: "755517010077",
-  appId: "1:755517010077:web:c7b7a0f8125e375ffe6474",
-  measurementId: "G-48MQWFPSBY"
+ apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
 };
 
 // Global variables provided by the Canvas environment.
